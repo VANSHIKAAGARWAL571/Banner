@@ -1,0 +1,130 @@
+  .dashboard {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    background-size: 400% 400%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    animation: gradientBG 15s ease infinite;
+    box-sizing: border-box;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .dashboard h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .dashboard label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .dashboard textarea,
+  .dashboard input[type="text"],
+  .dashboard input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .dashboard input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .dashboard button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #00c6ff; /* Light Blue */
+    background-image: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient */
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  .dashboard button:hover {
+    background-color: #0072ff; /* Darker Blue */
+    background-image: linear-gradient(to right, #0072ff, #00c6ff); /* Reversed Gradient */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  .dashboard button:active {
+    transform: translateY(0); /* No lift when active */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .dashboard h2 {
+      font-size: 22px;
+    }
+  
+    .dashboard textarea,
+    .dashboard input[type="text"],
+    .dashboard input[type="number"] {
+      font-size: 14px;
+    }
+  
+    .dashboard button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .dashboard h2 {
+      font-size: 20px;
+    }
+  
+    .dashboard textarea,
+    .dashboard input[type="text"],
+    .dashboard input[type="number"] {
+      font-size: 12px;
+    }
+  
+    .dashboard button {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+  
